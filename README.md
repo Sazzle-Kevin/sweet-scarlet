@@ -29,6 +29,6 @@ Dieses Projekt wurde in einem Zeitraum von 5 Tagen von einer studentischen/Arbei
 
 
 ## 👥 Team
-- Christopher (https://github.com/Sazzle-Kevin) – Planung
-- Daniel () – Trello
-- Kevin () – GitHub Repository
+- Christopher (https://github.com/chr-d) – Wireframe
+- Daniel (https://github.com/777danielpaul-droid) – Trello
+- Kevin (https://github.com/Sazzle-Kevin) – GitHub Repository
