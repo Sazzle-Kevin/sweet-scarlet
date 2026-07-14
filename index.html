@@ -14,6 +14,31 @@
         --color-light-red: rgb(220, 38, 38);
         --color-dark-red: rgb(153, 27, 27);
       }
+      @utility info-card {
+        @apply flex flex-col bg-amber-50 m-4 pb-4 rounded-xl overflow-hidden;
+        & h3 {
+          @apply font-bold text-xl px-4;
+        }
+        & img {
+          @apply w-full h-full object-cover group-hover:scale-110 transition-all;
+        }
+        &:hover img {
+          @apply scale-110 transition-all;
+        }
+        & p {
+          @apply px-4;
+        }
+        & a {
+          @apply block w-fit py-2 px-6 mr-4 rounded-full bg-amber-300 mt-auto self-end
+          hover:bg-amber-400 hover:scale-105 transition-all;
+        }
+        & .img-container {
+          @apply h-32 overflow-hidden;
+        }
+        & .card-content {
+          @apply flex flex-col flex-1 gap-4 mt-4;
+        }
+      }
     </style>
   </head>
   <body class="flex flex-col min-h-screen bg-light-red text-gray-900">
@@ -21,8 +46,144 @@
       <!-- Navigation / Logo -->
     </header>
 
-    <main class="flex-grow">
-      <!-- Hauptinhalt -->
+    <main class="flex-grow flex flex-col gap-8 max-w-screen-lg m-auto">
+      <section class="flex justify-center">
+        <div
+          class="flex flex-col sm:flex-row items-center bg-amber-50 p-4 m-4 rounded-2xl"
+        >
+          <img
+            src="julia-vivcharyk-k4FPEsQCMHc-unsplash_alpha.png"
+            alt="Zerstückelte Erdbeere"
+            class="max-w-1/2 max-h-150"
+          />
+          <div class="p-4">
+            <h2 class="font-bold text-3xl my-4">rot, wild, unwiderstehlich</h2>
+            <p>
+              Sie sind der ultimative Snack des Sommers und bringen die Sonne
+              direkt auf deinen Teller. Erdbeeren sind absoluter Kult – und das
+              völlig zu Recht. Hier erfährst du, warum die kleinen roten Früchte
+              das Beste sind, was die warme Jahreszeit zu bieten hat!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1468577760773-139c2f1c335f"
+                alt="Erdbeermarmelade auf Toast"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Marmelade</h3>
+              <p>
+                Hol dir den Geschmack des Sommers in jede Jahreszeit. Ob dick
+                auf warmes Buttertoast gestrichen oder als Klecks auf einem
+                frisch gebackenen Scone – Erdbeermarmelade fängt die natürliche
+                Süße der Frucht ein und verwandelt sie in einen reichhaltigen,
+                gemütlichen Aufstrich, der jedes Frühstück zu einem besonderen
+                Genuss macht.
+              </p>
+              <a href="#">Rezepte</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1567639430132-a058446e6425?"
+                alt="Erdbeereis am Stiel"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Eis</h3>
+              <p>
+                Nichts geht über die klassische Erfrischung von Erdbeereis. Es
+                verbindet reichhaltige, cremige Sahne perfekt mit der
+                fruchtig-frischen Note echter Erdbeeren – ein zeitloser
+                Dessert-Klassiker, der mit jeder einzelnen Kugel ein kühles
+                Stück Sonnenbrand liefert.
+              </p>
+              <a href="#">Rezepte</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1611293388250-580b08c4a145"
+                alt="Erdbeertorte"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Kuchen & Torten</h3>
+              <p>
+                Von eleganten Biskuit-Schichttorten bis hin zum schnellen
+                Blechkuchen für das Wochenende – Erdbeeren verleihen jedem
+                Gebäck eine wunderschöne Farbe und wunderbare Saftigkeit. Mit
+                frischen Erdbeerscheiben und Schlagsahne geschichtet, ist ein
+                Erdbeerkuchen das perfekte Highlight für jede Feier.
+              </p>
+              <a href="#">Rezepte</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1622597468158-27733896a49d"
+                alt="Erdbeer-Milchshake"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Smoothies & Shakes</h3>
+              <p>
+                Der perfekte Energieschub für den Tag oder einfach zum Genießen.
+                Mixe sie mit Joghurt und Spinat für einen farbenfrohen,
+                nährstoffreichen Frühstücks-Smoothie, oder püriere sie mit
+                Vanilleeis und Milch zu einem Milchshake im Retro-Diner-Stil,
+                der pure Nostalgie weckt.
+              </p>
+              <a href="#">Rezepte</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1559715745-e1b33a271c8f"
+                alt="Erdbeeren mit Schokolade umhüllt"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Dessert</h3>
+              <p>
+                as ultimative Duo aus Eleganz und Genuss. Die knackige, edle
+                Hülle aus dunkler, Vollmilch- oder weißer Schokolade passt
+                perfekt zur saftigen, leicht säuerlichen Geschmacksexplosion
+                einer frischen Erdbeere. Das macht diesen einfachen Snack zum
+                unbestrittenen König auf jedem Dessertteller.
+              </p>
+              <a href="#">Rezepte</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1670607231914-605c7b94edd0"
+                alt="Erdbeeren in einer Schale"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Erdbeeren pur</h3>
+              <p>
+                Das perfekte Fingerfood der Natur. Kalorienarm, aber voller
+                Vitamin C und Antioxidantien: Eine Handvoll frischer, purer
+                Erdbeeren ist der schnellste Weg, um den Heißhunger auf Süßes
+                völlig ohne schlechtes Gewissen zu stillen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
