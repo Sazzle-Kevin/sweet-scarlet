@@ -107,14 +107,23 @@
       <div
         class="hidden md:flex fixed w-full -bottom-16 z-10 justify-center pointer-events-none"
       >
-        <img
-          src="Erdbeere_3.png"
-          alt="Erdbeere"
-          class="w-[130px] h-auto transition-all duration-600 ease-out hover:-translate-y-14 group-hover:-translate-y-9 pointer-events-auto peer"
-        />
+        <input type="checkbox" id="bear-toggle" class="peer/toggle hidden" />
+
+        <label
+          for="bear-toggle"
+          class="fixed inset-0 h-screen w-screen z-10 hidden peer-checked/toggle:block pointer-events-auto"
+        >
+        </label>
+
+        <label
+          for="bear-toggle"
+          class="peer/bear cursor-pointer pointer-events-auto z-20 transition-all duration-600 ease-out hover:-translate-y-14 group-hover:-translate-y-9 peer-checked/toggle:-translate-y-14"
+        >
+          <img src="Erdbeere_3.png" alt="Erdbeere" class="w-[130px] h-auto" />
+        </label>
 
         <div
-          class="absolute opacity-0 pointer-events-none peer-hover:opacity-100 hover:opacity-100 peer-hover:pointer-events-auto hover:pointer-events-auto transition-opacity duration-300 max-w-xs bg-white text-black border p-4 rounded-2xl rounded-bl-none shadow-md bottom-35 ml-80"
+          class="absolute opacity-0 pointer-events-none z-20 transition-opacity duration-300 max-w-xs bg-white text-black border p-4 rounded-2xl rounded-bl-none shadow-md bottom-35 ml-80 hover:opacity-100 hover:pointer-events-auto peer-checked/toggle:opacity-100 peer-checked/toggle:pointer-events-auto peer-hover/bear:opacity-100 peer-hover/bear:pointer-events-auto"
         >
           <p class="text-sm font-medium">
             <a
