@@ -78,7 +78,7 @@
         </ul>
       </nav>
       <div
-        class="hidden md:flex fixed w-full -bottom-16 z-10 justify-center pointer-events-none"
+        class="flex fixed w-full -bottom-16 z-10 pl-8 justify-start sm:justify-center pointer-events-none"
       >
         <input type="checkbox" id="bear-toggle" class="peer/toggle hidden" />
 
@@ -96,11 +96,11 @@
         </label>
 
         <div
-          class="absolute opacity-0 pointer-events-none z-20 transition-opacity duration-300 max-w-xs bg-white text-black border p-4 rounded-2xl rounded-bl-none shadow-md bottom-35 ml-80 hover:opacity-100 hover:pointer-events-auto peer-checked/toggle:opacity-100 peer-checked/toggle:pointer-events-auto peer-hover/bear:opacity-100 peer-hover/bear:pointer-events-auto"
+          class="absolute opacity-0 pointer-events-none z-20 transition-opacity duration-300 max-w-xs bg-white text-black border p-4 rounded-2xl rounded-bl-none shadow-md bottom-35 sm:ml-80 ml-30 hover:opacity-100 hover:pointer-events-auto peer-checked/toggle:opacity-100 peer-checked/toggle:pointer-events-auto peer-hover/bear:opacity-100 peer-hover/bear:pointer-events-auto"
         >
           <p class="text-sm font-medium">
             <a
-              href="https://777danielpaul-droid.github.io/ErdBaeren/"
+              href="https://777danielpaul-droid.github.io/ErdBaeren2/"
               class="hover:underline"
             >
               Hey! Suchst du nach Erdbären?
@@ -256,12 +256,29 @@
     </main>
 
     <footer id="bottom" class="border-t-4 border-[#7ed484]">
-      <div class="w-full my-2 px-10 sm:px-16 lg:px-24 flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-start sm:gap-6">
+      <div
+        class="w-full my-2 px-10 sm:px-16 lg:px-24 flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-start sm:gap-6"
+      >
         <span class="text-[2rem] leading-none" aria-hidden="true">🐻</span>
-        <nav class="flex flex-col items-center gap-3 sm:flex-row sm:ml-auto sm:justify-end sm:gap-8" aria-label="Footer">
-          <a class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]" href="#agb">AGB</a>
-          <a class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]" href="#datenschutz">Datenschutz</a>
-          <a class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]" href="#top">Home</a>
+        <nav
+          class="flex flex-col items-center gap-3 sm:flex-row sm:ml-auto sm:justify-end sm:gap-8"
+          aria-label="Footer"
+        >
+          <a
+            class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]"
+            href="#agb"
+            >AGB</a
+          >
+          <a
+            class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]"
+            href="#datenschutz"
+            >Datenschutz</a
+          >
+          <a
+            class="text-amber-50 no-underline text-[0.9375rem] font-semibold tracking-[0.01em] transition-colors duration-150 hover:text-[#7ed484]"
+            href="#top"
+            >Home</a
+          >
         </nav>
       </div>
     </footer>
