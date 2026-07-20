@@ -13,9 +13,14 @@
       @theme {
         --color-light-red: rgb(220, 38, 38);
         --color-dark-red: rgb(153, 27, 27);
+        --shadow-custom:
+          0px 1px 1.1px hsl(357deg 100% 17% / 0.36),
+          0px 3.3px 3.7px -0.8px hsl(357deg 100% 17% / 0.36),
+          0px 8.2px 9.2px -1.7px hsl(357deg 100% 17% / 0.36),
+          0px 20px 22.5px -2.5px hsl(357deg 100% 17% / 0.36);
       }
       @utility info-card {
-        @apply flex flex-col bg-amber-50 m-4 pb-4 rounded-xl overflow-hidden;
+        @apply flex flex-col bg-amber-50 m-4 pb-4 rounded-xl overflow-hidden shadow-custom;
         & h3 {
           @apply font-bold text-xl px-4;
         }
@@ -41,7 +46,9 @@
       }
     </style>
   </head>
-  <body class="flex flex-col min-h-screen bg-light-red text-gray-900">
+  <body
+    class="flex flex-col min-h-screen bg-light-red text-gray-900 bg-gradient-to-b from-green-300 from-7% via-red-200 via-10% to-red-800 to-20%"
+  >
     <header class="group">
       <nav
         class="hidden md:flex fixed left-[5%] w-9/10 h-8 bg-green-300 text-green-900 rounded-b-4xl z-20 shadow-lg"
@@ -115,10 +122,10 @@
       </div>
     </header>
 
-    <main class="flex-grow flex flex-col gap-8 max-w-screen-lg m-auto">
-      <section class="flex justify-center">
+    <main class="flex-grow flex flex-col gap-8">
+      <section class="flex justify-center max-w-screen-lg m-auto">
         <div
-          class="flex flex-col sm:flex-row items-center bg-amber-50 p-4 m-4 rounded-2xl"
+          class="flex flex-col sm:flex-row items-center bg-amber-50 p-4 m-4 rounded-2xl shadow-custom"
         >
           <img
             src="julia-vivcharyk-k4FPEsQCMHc-unsplash_alpha.png"
@@ -136,8 +143,13 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
+      <section class="relative">
+        <div
+          class="absolute inset-0 opacity-50 sm:bg-[url('vecteezy_seamless-pattern-with-strawberry-hand-drawn-illustration_6063341.png')] bg-repeat [mask-image:linear-gradient(to_bottom,transparent,black_50%,black_75%,transparent)] [-webkit-mask-image:linear-gradient(to_bottom,transparent,black_50%,black_75%,transparent)]"
+        ></div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 justify-items-center relative max-w-screen-lg m-auto"
+        >
           <div class="info-card">
             <div class="img-container">
               <img
