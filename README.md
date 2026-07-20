@@ -29,6 +29,6 @@ Dieses Projekt wurde in einem Zeitraum von 5 Tagen von einer studentischen/Arbei
 
 
 ## 👥 Team
-- Christopher (https://github.com/chr-d) – Wireframe
-- Daniel (https://github.com/777danielpaul-droid) – Trello
-- Kevin (https://github.com/Sazzle-Kevin) – GitHub Repository
+- Christopher (https://github.com/chr-d) – Wireframe, Main Section
+- Daniel (https://github.com/777danielpaul-droid) – Trello, Fotter, Zweite Webseite (Erdbären)
+- Kevin (https://github.com/Sazzle-Kevin) – GitHub Repository, Header
